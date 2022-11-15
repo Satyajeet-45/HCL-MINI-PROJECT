@@ -1,0 +1,315 @@
+<html>
+    <head>
+
+        <title>CV Builder</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylee.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        
+    </head>
+        <!-- lets begin our code -->
+    
+    <body>
+
+        <div style="background-color:lightgrey;">
+        <div class="container" id="cv-form">
+            <h1 class="text-center my-2" style="font-family:Orbitron;">
+                CV Builder</h1>
+            <p class="text-center">
+                HCL PROJECT USING HTML, CSS,JS AND BOOTSTRAP </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- first-col -->
+                    <div class="shadow-lg p-3 mb-5 bg-body rounded">
+                    <h3 style="font-family: serif;">
+                        Personal Details</h3>
+                    <hr>
+                    <div class="form-group mt-3">
+                        <label for="fname">Your Name</label>
+                        <input type="text" id="fname" class="form-control" placeholder="Enter here">
+                    </div>
+
+                    <hr>
+                    <!-- for Gender -->
+
+                    <div class="form-group">
+                        <label for="Gender">Gender</label>
+                        <br><br>
+                        <label for="Gender" name="gender">Male</label>
+                        <input type="radio" id="fname" 
+                        class="form-check-input" name="gender">
+                        <label for="Gender" name="gender">Female</label>
+                        <input type="radio" id="fname" 
+                        class="form-check-input" name="gender">
+                        <label for="Gender" name="gender">Others</label>
+                        <input type="radio" id="fname" 
+                        class="form-check-input" name="gender">
+
+                    </div>
+                    <hr>
+                    <!-- <div class="form-group mt-2">
+                        <label for="Lname">Last name</label>
+                        <input type="text" id="Lname" class="form-control" placeholder="Enter here">
+                    </div> -->
+
+                    <div class="form-group mt-2">
+                        <label for="contactN">Contact number :</label>
+                        <input type="text" id="contactN" class="form-control" placeholder="Enter here">
+                    </div>
+
+                    <!-- for address -->
+                    <div class="form-group mt-2">
+                        <label for="address">Address</label>s
+                        <textarea  id="address" class="form-control" row="5" placeholder="">
+                        </textarea>
+                    </div>
+
+                    <!-- for uploading image -->
+                    <div class="form-group mt-4">
+                        <label for=""><b>Upload Photo</b></label>
+                         <input id="imgField" type="file" class="form-control "/>
+                    </div>
+
+                
+                </div>
+                    
+                
+                    <hr bt-2>
+                <div class="shadow-lg p-3 mb-5 bg-body rounded">
+                    <h3 mt-3 style="font-family: serif; ">
+                        Websites & Social Links </h3>
+                    <div class="form-group mt-4">
+                        <hr>
+                        <!-- for links 
+                        i ahve given 3 social media link options -->
+                        <label for="fblink">Facebook</label>
+                        <input type="text" id="fblink" 
+                        class="form-control" placeholder="Here">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="inslink">Instagram</label>
+                        <input type="text" id="inslink" 
+                        class="form-control" placeholder="Here">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="lklink">LinkedIn</label>
+                        <input type="text" id="lklink"
+                        class="form-control" placeholder="Here">
+                    </div>
+                </div>
+
+
+                 </div>
+
+                 <!-- for Objective -->
+                <div class="col-md-6 shadow-lg p-3 mb-5 bg-body rounded"> 
+                    <!--Professional Information-->
+                    <!-- second-col -->
+                    <h3 style="font-family: serif;">Professional Summary </h3>
+                
+                    <div class="form-group mt-3">
+                        <hr>
+                        <label for=""><b>Objective</b></label>
+                        <textarea
+                        id="objectiveField" 
+                        placeholder="Enter here"
+                        class="form-control "  
+                        ></textarea>
+                    </div>
+
+                <br>
+
+
+                <!-- <h3>Professional Summary 2 </h3> -->
+                
+                <div class="form-group mt-2" id="weExp">
+                    <label for=""><b>Employment History </b></label>
+                    <textarea placeholder="Enter here"
+                     class="form-control we-field "
+                     rows="3"  
+                    ></textarea>
+
+                    <!-- new text area -->
+                    <div class="container text-center mt-3" id="weAddButton">
+                        <button onclick="addnewworkexp()" class="btn btn-secondary btn-sm ">
+                            Add
+                        </button>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- for SKills -->
+                <div class="form-group mt-3">
+                    <label for=""><b>Skills</b></label>
+                    <textarea
+                    id="skillsField" 
+                    placeholder="Enter here"
+                    class="form-control skills "  
+                    ></textarea>
+                </div>
+
+                <br>
+
+                <!--  -->
+                <!-- for Acadmic qualification -->
+                <div class="form-group mt-4" id="uredu">
+                    <label for=""><b>Acadmic Qualification</b>
+                    </label>
+                    <textarea placeholder="Enter here"
+                     class="form-control edu" 
+                     rows="3" 
+                    ></textarea>
+                    <div class="container text-center mt-3" 
+                    id="eduAddButton">
+                        <button  onclick="newEdu()" 
+                        class="btn btn-secondary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+                
+            <!-- for generate cv -->    
+        <div class="container text-center mt-3">
+            <button onclick="generateCV()" class="btn btn-secondary btn-lg ">
+                Generate CV</button>
+        </div>
+        </div>
+        </div>
+
+
+        <!-- CV Template -->
+        <div calss="container" id="cv-template">
+            <div class="row">
+                <div class="col-md-4  text-center background py-5">
+                    <!-- firstcol -->
+                    <img
+                     src="https://campussafetyconference.com/wp-content/uploads/2020/08/iStock-476085198.jpg" 
+                     alt=""
+                     class="image-fluid myimg"
+                     id="imgTemplate"
+                    />
+
+                    <div class="container">
+                        <p id="nameT1" > satyajeet swain </p> 
+
+                        <p id="contactT">+916556953552 </p>
+                        <p id="addressT">address sagfb dbdsfjfb  sjhsks snkfhskfbm </p>
+                        <hr>
+                        <p id="fbT"><a href="#1">http://www.facebook.com</a>
+                        </p>
+                        <p id="insT"><a href="21">http://www.instagram.com</a></p>
+                        <p id="lkT"><a href="#3">http://www.linkedIn.com</a></p>
+
+                    </div>
+
+                </div>
+                <div class="col-md-8 py-5 ">
+                    <!-- second col -->
+                    <h1 id="name2T" class="text-center" style="font-weight:900">SATYAJEET SWAIN</h1>
+                    <!-- Objective card -->
+                    <div class="card mt-3">
+                        <div class="card-header background">
+                            <h3>Objective</h3>
+
+                        </div>
+                        <div class="card-body">
+                            <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ex, laudantium at
+                                 nam odit ad beatae nulla consequatur perferendis, dolores quos doloremque moles
+                                 tias consequuntur minima eveniet nesciunt dolore odio quo rerum. Voluptatem dol
+                                 oribus repellat libero quidem sapiente fuga consectetur?</p>
+                        </div>
+                    </div>
+
+                    <!-- work experience -->
+                    <div class="card mt-3">
+                        <div class="card-header background">
+                            <h3>
+                                Employment History 
+
+                            </h3>
+
+                        </div>
+                        <div class="card-body">
+                            <ul id="wrkexpT">
+                                <li>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, fuga.
+                                </li>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, fuga.
+                                    
+                                </li>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, fuga.
+                                    
+                                </li>
+
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-header background">
+                        <h3>
+                            Skills
+
+                        </h3>
+
+                        </div>
+                        <div class="card-body">
+                            <p id="skillsT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ex, laudantium at
+                                 nam odit ad beatae nulla consequatur perferendis, dolores quos doloremque moles
+                                  dolore odio quo rerum. Volubero quidem sapiente fuga consectetur?</p>
+                        </div>
+                    </div>
+
+                    <!-- acadmic qualifications -->
+                    <br>
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>
+                                Acadmic qualification
+                            </h3>
+
+                        </div>
+                        <div class="card-body">
+                            <ul id="acadT">
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, fuga.
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, fuga.
+                                    
+                                    </li>
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, fuga.
+                                    
+                                    </li>
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, fuga.
+                                    
+                                    </li>
+                                </li>
+                            
+                            </ul>
+                       
+                        </div>
+                    </div>
+                    <div class="container mt-3 text-center">
+                        <button onclick="printCV()" 
+                        class="btn background">
+                            Print CV
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        
+        
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+          crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </body>
+</html>
